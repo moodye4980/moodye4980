@@ -7,7 +7,7 @@ Currently taking CSC-113 AI Fundamentals and learning to collaborate with AI too
 ## My Foo 🎯
 My passion is gaming, I enjoy playing games such as valorant, apex, siege, and sometimes roblox. That's my main thing, but I also don't have anything specifically correlating into hobbies, 
 I asked some people around me and when they think of me they just think of a person who's very socially outgoing and very caring.
-So, i'd say my passion is making others around me happy. Whatever they do, I do. <3
+So, i'd say my passion is making others around me happy. Whatever they do, I do.  <3
 
 
 ## Currently Learning
