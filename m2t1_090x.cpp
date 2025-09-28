@@ -18,7 +18,7 @@ int main() {
     double total_cost;
 
     // Greet the customer
-    cout << "Welcome to our " << product << "store!! <3" << endl;
+    cout << "Welcome to our " << product << " store!! <3" << endl;
     cout << "What's your first name? ";
     cin >> first_name;
     cout << "What's your last name? ";
