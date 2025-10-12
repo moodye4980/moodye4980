@@ -95,12 +95,30 @@ int main()
     leftoverSlices = totalSlices - slicesNeeded;
 
     // display
-    cout << "Total slices of pizza " << totalSlices << endl;
+    cout << "\n Total slices of pizza " << totalSlices << endl;
     cout << "Slices needed for visitors " << slicesNeeded << endl;
 
     if (leftoverSlices >= 0) {
         cout << "Leftover slices of pizza: " << leftoverSlices << endl;
     }
+    
+    cout << "\n question 4 !!!";
+
+    // the cheerleaderss <3
+    
+    // variables
+    string letsGo, school, team, cheerOne, cheerTwo;
+    letsGo = "Let's go";
+    team = " Trojans!!d";
+    school = " FTCC!";
+    cheerOne = letsGo + school;
+    cheerTwo = letsGo + team;
+
+    // da cheer
+    cout << cheerOne << endl;
+    cout << cheerOne << endl;
+    cout << cheerOne << endl;
+    cout << cheerTwo << endl;
 
     return 0;
 
