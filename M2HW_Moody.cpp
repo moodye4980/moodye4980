@@ -1,0 +1,75 @@
+// CSC 134
+// M1LAB
+// Emma Moody
+// 9/16/25
+
+#include <iostream>
+using namespace std;
+#include <iomanip>
+
+int main()
+{
+    string name;
+    double startingBalance, depositAmount, withdrawalAmount;
+
+    cout << "question 1" << endl;
+    
+    // name
+    cout << "Enter your name: ";
+    cin >> name;
+
+    // starting account balance
+    cout << "Enter your starting account balance in dollars: $";
+    cin >> startingBalance;
+
+    // amount of deposit
+    cout << "Enter the amount you want to deposit in dollars: $";
+    cin >> depositAmount;
+
+    // amount of withdrawal
+    cout << "Enter the amount you want to withdraw in dollars: $";
+    cin >> withdrawalAmount;
+
+    // calculation
+    double finalBalance = startingBalance + depositAmount - withdrawalAmount;
+    int accountNumber = 23;
+
+    // display information
+    cout << "Name of the account: " << name << endl;
+    cout << "Account number: " << accountNumber << endl;
+    cout << "Final aacount balance: $" << finalBalance << endl;
+
+
+    // next question based from M2LAB
+    cout << "question 2" << endl;
+     
+    const double COST_PER_CUBIC_FOOT = 0.3;
+    const double CHARGE_PER_CUBIC_FOOT = .52;
+
+    // variables
+    double length, width, height, volume, cost, charge, profit;
+
+    // prompt the user for crates length, width, height
+    cout << "Enter the dimensions of the crate (in feet): \n";
+    cout << "Length: ";
+    cin >> length;
+    cout << "Width: ";
+    cin >> width;
+    cout << "Height: ";
+    cin >> height;
+
+    // calculations
+    volume = length * width * height;
+    cost = volume * COST_PER_CUBIC_FOOT;
+    charge = volume * CHARGE_PER_CUBIC_FOOT;
+    profit = charge - cost;
+
+    // display the data
+    cout << "The volume of the crate is ";
+    cout << volume << " cubic feet \n";
+    cout << "Cost to build: $" << cost << endl;
+    cout << "Charge to customer: $" << charge << endl;
+    cout << "Profit: $" << profit << endl;
+    return 0;
+
+}
