@@ -12,7 +12,7 @@ int main()
     string name;
     double startingBalance, depositAmount, withdrawalAmount;
 
-    cout << "question 1" << endl;
+    cout << " Question 1 ! " << endl;
     
     // name
     cout << "Enter your name: ";
@@ -41,7 +41,7 @@ int main()
 
 
     // next question based from M2LAB
-    cout << "question 2" << endl;
+    cout << "\n Question 2 :) " << endl;
      
     const double COST_PER_CUBIC_FOOT = 0.3;
     const double CHARGE_PER_CUBIC_FOOT = .52;
@@ -70,6 +70,39 @@ int main()
     cout << "Cost to build: $" << cost << endl;
     cout << "Charge to customer: $" << charge << endl;
     cout << "Profit: $" << profit << endl;
+
+    cout << "\n Question 3 <3 " << endl;
+    
+    // variables
+    int numPizzas, slicesPerPizza, numVisitors;
+    int totalSlices, slicesNeeded, leftoverSlices;
+
+    // amount of pizzahs
+    cout << "How many pizzas will you order ";
+    cin >> numPizzas;
+
+    // slices per pizzah
+    cout << "How many slices per pizza ";
+    cin >> slicesPerPizza;
+
+    // how many people
+    cout << "How many visitors will come ";
+    cin >> numVisitors;
+
+    // cals
+    totalSlices = numPizzas * slicesPerPizza;
+    slicesNeeded = numVisitors * 2;
+    leftoverSlices = totalSlices - slicesNeeded;
+
+    // display
+    cout << "Total slices of pizza " << totalSlices << endl;
+    cout << "Slices needed for visitors " << slicesNeeded << endl;
+
+    if (leftoverSlices >= 0) {
+        cout << "Leftover slices of pizza: " << leftoverSlices << endl;
+    }
+
     return 0;
+
 
 }
