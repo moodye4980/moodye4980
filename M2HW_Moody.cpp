@@ -108,13 +108,15 @@ int main()
     
     // variables
     string letsGo, school, team, cheerOne, cheerTwo;
+
     letsGo = "Let's go";
-    team = " Trojans!!d";
+    team = " Trojans!!";
     school = " FTCC!";
     cheerOne = letsGo + school;
     cheerTwo = letsGo + team;
 
     // da cheer
+    cout << "" << endl;
     cout << cheerOne << endl;
     cout << cheerOne << endl;
     cout << cheerOne << endl;
