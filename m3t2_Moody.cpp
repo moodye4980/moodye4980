@@ -15,11 +15,11 @@ int main()
 
     // ask for user input
     cout << "Please enter the width and height of the first" << endl;
-    cout << "reactangle, seperated by a space or newline" << endl;
+    cout << "Rectangle, seperated by a space or newline" << endl;
     cin >> widthOne >> lengthOne;
 
     cout << "Please enter the width and height of the second" << endl;
-    cout << "reactangle, seperated by a space or newline" << endl;
+    cout << "Rectangle, seperated by a space or newline" << endl;
     cin >> widthTwo >> lengthTwo;
 
     // calculate answer
@@ -29,4 +29,18 @@ int main()
     // display results
     cout << "Rectangle one has area of " << areaOne << endl;
     cout << "Rectangle two has area of " << areaTwo << endl;
-    
+
+     // which is bigger
+    if (areaOne > areaTwo) {
+        cout << "Rectangle one is bigger" << endl;
+    }
+
+    else if (areaTwo > areaOne) {
+        cout << "Rectangle two is bigger" << endl;
+    }
+
+    else if (areaOne == areaTwo) {
+        cout << "They are the same size" << endl;
+    }
+
+}

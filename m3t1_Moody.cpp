@@ -11,15 +11,15 @@ int main()
 {
     // declare our variables
     int widthOne, lengthOne, widthTwo, lengthTwo;
-    int areaOne, areaTwo;
+    int areaOne, areaTwo; 
 
     // ask for user input
     cout << "Please enter the width and height of the first" << endl;
-    cout << "reactangle, seperated by a space or newline" << endl;
+    cout << "Rectangle, seperated by a space or newline" << endl;
     cin >> widthOne >> lengthOne;
 
     cout << "Please enter the width and height of the second" << endl;
-    cout << "reactangle, seperated by a space or newline" << endl;
+    cout << "Rectangle, seperated by a space or newline" << endl;
     cin >> widthTwo >> lengthTwo;
 
     // calculate answer
