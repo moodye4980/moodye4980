@@ -12,7 +12,7 @@ int main()
     
     while (true)
     {
-        cout << "Enter a number from 1-12" << endl;
+        cout << "enter a number from 1-12" << endl;
         cin >> num;
         if (num >= 1 && num <= 12)
         {
@@ -20,7 +20,7 @@ int main()
         }
         else
         {
-            cout << "Invalid input, enter a number between 1-12" << endl;
+            cout << "that won't work please enter a number between 1-12 <3" << endl;
         }
     }
 
