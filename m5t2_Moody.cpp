@@ -20,8 +20,8 @@ int square(int number)
 
 int main() 
 {
-   int number = 1;
-   int count;
+   int count = 1;
+   int result;
 
    while (count <= 10)
    {
