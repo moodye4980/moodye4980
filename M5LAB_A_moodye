@@ -1,0 +1,187 @@
+// CSC 134
+// M5LAB_A
+// Emma Moody
+// 11/16/25
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Function prototypes
+void exercise1_healthRegen();
+void exercise2_levelUpStats();
+void exercise3_inventorySystem();
+
+int main() {
+    int choice;
+
+    cout << "==================================" << endl;
+    cout << "       LAB 7: LOOP FUNDAMENTALS    " << endl;
+    cout << "==================================" << endl;
+    cout << "1. Exercise 1: Health Regeneration" << endl;
+    cout << "2. Exercise 2: Level Up Stats" << endl;
+    cout << "3. Exercise 3: Inventory System" << endl;
+    cout << "4. Run All Exercises" << endl;
+    cout << "5. Exit" << endl;
+    cout << "==================================" << endl;
+    cout << "Choice: ";
+    cin >> choice;
+
+    switch (choice)
+    {
+        case 1:
+            exercise1_healthRegen();
+            break;
+        case 2:
+            exercise2_levelUpStats();
+            break;
+        case 3:
+            exercise3_inventorySystem();
+            break;
+        case 4:
+            exercise1_healthRegen();
+            cout << endl;
+            exercise2_levelUpStats();
+            cout << endl;
+            exercise3_inventorySystem();
+            break;
+        case 5:
+            cout << "Goodbye!" << endl;
+            break;
+        default:
+            cout << "Invalid choice!" << endl;
+    }
+    return 0;
+}
+
+
+/* ============================================================================
+   EXERCISE 1: HEALTH REGENERATION (30 points)
+   ============================================================================ */
+void exercise1_healthRegen() {
+    cout << "\n=== EXERCISE 1: HEALTH REGENERATION ===" << endl;
+
+    int health = 30;
+    int maxHealth = 100;
+
+    cout << "Starting health: " << health << "/" << maxHealth << endl;
+    cout << "Resting to recover health..." << endl << endl;
+
+    // WHILE LOOP
+    while (health < maxHealth) {
+        health += 10;
+        if (health > maxHealth)
+            health = maxHealth;
+
+        // Print health value
+        cout << "Health: " << health << "/" << maxHealth << endl;
+    }
+
+    cout << "Fully recovered!" << endl;
+}
+
+
+/* ============================================================================
+   EXERCISE 2: LEVEL UP STATS (35 points)
+   ============================================================================ */
+void exercise2_levelUpStats() {
+    cout << "\n=== EXERCISE 2: LEVEL UP STATS ===" << endl;
+
+    // Base stats at level 0
+    const int BASE_STR = 10;
+    const int BASE_DEX = 8;
+    const int BASE_INT = 12;
+
+    // Table header
+    cout << "Level | STR | DEX | INT" << endl;
+    cout << "------|-----|-----|-----" << endl;
+
+    int str1, dex1, int1;  // Level 1 stats
+    int str10, dex10, int10; // Level 10 stats
+
+    // FOR LOOP
+    for (int level = 1; level <= 10; level++) {
+        int STR = BASE_STR + (level * 2);
+        int DEX = BASE_DEX + (level * 3);
+        int INT = BASE_INT + (level * 1);
+
+        // Save level 1 values
+        if (level == 1) {
+            str1 = STR;
+            dex1 = DEX;
+            int1 = INT;
+        }
+
+        // Save level 10 values
+        if (level == 10) {
+            str10 = STR;
+            dex10 = DEX;
+            int10 = INT;
+        }
+
+        // Display row
+        cout << "  " << level << "   | "
+             << STR << "  | "
+             << DEX << "  | "
+             << INT << endl;
+    }
+
+    cout << "==============================" << endl;
+
+    // Growth totals
+    cout << "Total Growth: STR +" << (str10 - str1)
+         << ", DEX +" << (dex10 - dex1)
+         << ", INT +" << (int10 - int1) << endl;
+}
+
+
+/* ============================================================================
+   EXERCISE 3: INVENTORY SYSTEM (35 points)
+   ============================================================================ */
+void exercise3_inventorySystem() {
+    cout << "\n=== EXERCISE 3: INVENTORY SYSTEM ===" << endl;
+
+    // Equipment array
+    string equipment[5] = {
+        "Iron Sword",
+        "Leather Armor",
+        "Health Potion",
+        "Magic Ring",
+        "Rope"
+    };
+
+    // Display inventory
+    cout << "=== YOUR INVENTORY ===" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << (i + 1) << ". " << equipment[i] << endl;
+    }
+    cout << "======================" << endl << endl;
+
+    // Ask for search term
+    cin.ignore(); // clear leftover newline
+    string searchTerm;
+    cout << "Enter item to search for: ";
+    getline(cin, searchTerm);
+
+    // Search through array
+    bool found = false;
+    int position = -1;
+
+    for (int i = 0; i < 5; i++) {
+        if (equipment[i] == searchTerm) {
+            found = true;
+            position = i;
+            break;
+        }
+    }
+
+    // Results
+    if (found) {
+        cout << "Found \"" << searchTerm << "\" in slot " << (position + 1) << "!" << endl;
+    } else {
+        cout << "\"" << searchTerm << "\" not found in inventory." << endl;
+    }
+}
+
+
