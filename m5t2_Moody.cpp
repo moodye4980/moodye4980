@@ -20,12 +20,12 @@ int square(int number)
 
 int main() 
 {
-   int count = 1;
-   int result;
+   int number = 1;
+   int count;
 
    while (count <= 10)
    {
-    result = square(count);
+    count = square(count);
     printResult(count, result);
     count++;
    }
